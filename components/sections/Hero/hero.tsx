@@ -14,9 +14,7 @@ export const Hero = () => {
             </Title>
             <Paragraph
               style={{ color: "#d1d5db", fontSize: 18, }}>
-              Discover premium laptops,
-              smartphones 
-              at unbeatable prices.
+              Discover premium laptops, smartphones  at unbeatable prices.
             </Paragraph>
             <div className="mt-8 flex gap-4">
               <Button type="primary" size="large">
