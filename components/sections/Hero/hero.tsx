@@ -1,14 +1,13 @@
 import { Button } from "antd";
 import Paragraph from "antd/es/typography/Paragraph";
 import Title from "antd/es/typography/Title";
-
-
+import Image from "next/image"; // ایمپورت کامپوننت بهینه
 
 export const Hero = () => {
   return (
     <section
       className="
-      bg-gradient-to-r
+      bg-linear-to-r
       from-slate-900
       to-slate-700
       text-white
@@ -43,35 +42,28 @@ export const Hero = () => {
               }}
             >
               Discover premium laptops,
-              smartphones and accessories
+              smartphones 
               at unbeatable prices.
             </Paragraph>
 
             <div className="mt-8 flex gap-4">
-              <Button
-                type="primary"
-                size="large"
-              >
+              <Button type="primary" size="large">
                 Shop Now
               </Button>
-
-              <Button
-                size="large"
-              >
+              <Button size="large">
                 Explore
               </Button>
             </div>
           </div>
 
-          <div>
-            <img
-              src="/hero-laptop.png"
+          <div className="relative w-full max-w-xl mx-auto aspect-video">
+            <Image
+              src="/pic.jpg"
               alt="Laptop"
-              className="
-              w-full
-              max-w-xl
-              mx-auto
-              "
+              fill
+              className="object-cover rounded-lg"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
             />
           </div>
         </div>

@@ -2,42 +2,38 @@ import { SectionTitle } from "@/components/ui/SectionTitle/section-title";
 import { Row, Col } from "antd";
 import { CategoryCard } from "./categories-card";
 
-
 const categories = [
   {
     title: "Laptops",
-    image: "/categories/laptop.jpg",
+    image: "/lb.png",
   },
   {
     title: "Smartphones",
-    image: "/categories/mobile.jpg",
+    image: "/phones.png",
   },
   {
     title: "Tablets",
-    image: "/categories/tablet.jpg",
-  },
-  {
-    title: "Accessories",
-    image: "/categories/accessories.jpg",
+    image: "/tablet.png",
   },
 ];
 
 export const Categories = () => {
   return (
-    <section className="py-20">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="py-20 bg-white"> 
+      <div className="mx-auto max-w-7xl px-6 text-gray-800">
         <SectionTitle
           title="Shop By Category"
           subtitle="Browse our collections"
         />
 
-        <Row gutter={[24, 24]}>
+        <Row gutter={[24, 24]} justify="center">
           {categories.map((item) => (
             <Col
               xs={24}
               sm={12}
               lg={6}
               key={item.title}
+              style={{ display: 'flex', justifyContent: 'center' }} 
             >
               <CategoryCard {...item} />
             </Col>
