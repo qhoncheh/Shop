@@ -14,7 +14,6 @@ export default function FooterCategories() {
         <Link href="/products?category=phones">Smartphones</Link>
         <Link href="/products?category=tablets">Tablets</Link>
         <Link href="/products?category=laptops">Laptops</Link>
-        <Link href="/products?category=accessories">Accessories</Link>
       </Space>
     </>
   );
